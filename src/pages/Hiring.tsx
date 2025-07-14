@@ -60,12 +60,12 @@ const Hiring: React.FC = () => {
                 placeholder="Enter your work email"
                 className="flex-1 rounded-md border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-600"
               />
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
+              <a
+                href="https://app.reflense.com/signup"
+                className="bg-brand-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-500 transition"
               >
                 Get Referred Candidates
-              </button>
+              </a>
             </form>
 
             <p className="text-sm text-gray-600">
