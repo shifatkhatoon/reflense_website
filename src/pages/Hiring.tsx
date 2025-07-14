@@ -311,7 +311,6 @@ const Hiring: React.FC = () => {
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  href="/about#video"
                   className="step-item grid grid-cols-[56px_1fr] gap-4 items-start"
                 >
                   {/* Icon */}
