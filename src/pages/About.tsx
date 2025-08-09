@@ -275,6 +275,20 @@ const About: React.FC = () => {
                 name="_next"
                 value="https://reflense.com/thank-you"
               />
+              {/* Honeypot field to trap bots (kept hidden from users) */}
+              <div className="hidden" aria-hidden="true">
+                <label>
+                  Do not fill this field
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </label>
+              </div>
+              {/* Optional: set a subject for emails from Formspree */}
+              <input type="hidden" name="_subject" value="Reflense Contact Form" />
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-medium text-gray-800 block mb-1">
